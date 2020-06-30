@@ -10,19 +10,18 @@
   }
 }
 
-.header{
+.navigation {
+  background: linear-gradient(to right, transparent 50%, $primary-color 50%);
+  transition: .2s ease;
+
   @include desktop {
-    position: static !important;
     background: $secondary-color;
   }
 }
 
-.navigation {
-  background-image: linear-gradient(to right, transparent 50%, $primary-color 50%);
-  transition: .2s ease;
-
-  @include mobile {
-    background-image: linear-gradient(to right, transparent 70%, $primary-color 30%);
+.navbar-collapse{
+  @include desktop {
+    background: $secondary-color;
   }
 }
 
@@ -32,15 +31,12 @@
 
   @include desktop {
     padding-left: 0;
+    background: $secondary-color;
   }
 }
 
 .nav-bg {
   background-color: $secondary-color;
-}
-
-.top-height{
-  margin-top: -46px;
 }
 
 .nav-item {
@@ -74,19 +70,19 @@
   }
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
   color: $white;
 }
 
 link:focus,
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link:hover {
   color: $white;
 }
 
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link {
   color: $white;
 }
 
@@ -138,16 +134,6 @@ link:focus,
         transform-origin: unset;
       }
 
-      &.view {
-        visibility: visible !important;
-        opacity: 1;
-        transform: translateY(0);
-
-        @include desktop {
-          display: block;
-        }
-      }
-
       &.show {
         visibility: hidden;
 
@@ -162,6 +148,7 @@ link:focus,
       position: relative;
       color: $text-color-dark;
       transition: .2s ease;
+      text-transform: capitalize;
       font-family: $primary-font;
 
       @include desktop {
