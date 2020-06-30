@@ -1,6 +1,6 @@
 ######################## default configuration ####################
-baseURL = "http://examplesite.org"
-title = "Educenter | hugo education template"
+baseURL = "http://owlsectechnologies3.netlify.app"
+title = "OwlSec Technologies | I.T and Security Company"
 theme = "educenter-hugo"
 # post pagination
 paginate = "6"
