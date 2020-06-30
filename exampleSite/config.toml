@@ -1,6 +1,6 @@
 baseURL = "https://owlsectechnologies3.netlify.app"
-disableLanguages = []
-disqusShortname = "educenter"
+disableLanguages = ["fr"]
+disqusShortname = "ajulusthoughts"
 paginate = "6"
 summaryLength = "10"
 theme = "educenter-hugo"
